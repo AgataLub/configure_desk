@@ -1,3 +1,83 @@
 body {
-  background-color: lavender;
+  background-color: white;
+  font-family: "Verdana", sans-serif;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+h2 {
+  font-size: 1.5em;
+}
+.configurator {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+.desk,
+.choose-element,
+.choose-option {
+  border: 1px solid black;
+  height: 50vw;
+  padding: 30px;
+}
+
+.choose-element,
+.choose-option {
+  width: 200px;
+}
+
+.desk {
+  flex-grow: 2;
+}
+
+.materialbox:hover,
+.colorbox:hover {
+  opacity: 0.5;
+}
+
+.colorbox {
+  border-radius: 50%;
+  border: 1px solid black;
+  width: 25px;
+  height: 25px;
+  margin: 5px;
+  display: inline-block;
+}
+
+#red {
+  background-color: red;
+}
+
+#black {
+  background-color: black;
+}
+
+.materialbox {
+  border-radius: 10%;
+  width: 75px;
+  height: 25px;
+  border: 1px solid black;
+  margin: 5px;
+  display: inline-block;
+  padding: 5px;
+  text-align: center;
+}
+
+#wood {
+  background-color: burlywood;
+}
+
+#metal {
+  background-color: slategrey;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li:hover {
+  font-weight: 600;
 }
