@@ -6,36 +6,55 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css" />
   </head>
+
   <body>
     <h1>Desk Configurator</h1>
+
     <div class="configurator">
+
       <div class="desk">Here goes the svg.</div>
+
       <div class="choose-element">
-        <ul>
-          <li id="top-desk">Top Desk</li>
-          <li id="drawers">Drawers</li>
-          <li id="leg">Leg</li>
-          <li id="items">Extra Items</li>
-        </ul>
+        <div id="desk-features">
+          <img src="blackLamp.png" alt="" class="feature-item-preview hide" data-feature="blackLamp">
+          <img src="blueLamp.png" alt="" class="feature-item-preview hide" data-feature="blueLamp">
+          <img src="flower.png" alt="" class="feature-item-preview flower hide" data-feature="flower">
+          <img src="globe.png" alt="" class="feature-item-preview globe hide" data-feature="globe">
+        </div>
+        
+        <div id="selected">
+          <p>Selected features</p>
+          <ul>
+            <!-- featureElements are added here! -->
+          </ul>
+        </div>
       </div>
+
       <div class="choose-option">
         <h2 class="chosen-element"></h2>
         <h2>Colors</h2>
-        <div class="colorbox" id="white"></div>
-        <div class="colorbox" id="red"></div>
-        <div class="colorbox" id="black"></div>
+        <svg id="color-box-container" viewBox="0 0 300 50">
+          <rect class="colorbox" x="0" width="50" height="50" fill="#e07a5f" />
+          <rect class="colorbox" x="60" width="50" height="50" fill="#2a9d8f" />
+          <rect class="colorbox" x="120" width="50" height="50" fill="#81b29a" />
+          <rect class="colorbox" x="180" width="50" height="50" fill="#f2cc8f" />
+        </svg>
+
         <h2>Materials</h2>
         <div class="materialbox" id="wood">Wood</div>
         <div class="materialbox" id="metal">Metal</div>
         <h2>Items</h2>
-        <ul>
-          <li id="lamp1">Small Lamp</li>
-          <li id="lamp2">Big Lamp</li>
-          <li id="plant">Plant</li>
-          <li id="globe">Globe</li>
+
+        <ul id="elements">
+          <li id="lamp1"><img src="blackLamp.png" alt="" class="feature-item" data-feature="blackLamp"></li>
+          <li id="lamp2"><img src="blueLamp.png" alt="" class="feature-item" data-feature="blueLamp"></li>
+          <li id="plant"><img src="flower.png" alt="" class="feature-item" data-feature="flower"></li>
+          <li id="globe"><img src="globe.png" alt="" class="feature-item" data-feature="globe"></li>
         </ul>
       </div>
     </div>
+
     <script src="script.js"></script>
+
   </body>
 </html>
