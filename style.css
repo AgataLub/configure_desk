@@ -81,3 +81,11 @@ ul {
 li:hover {
   font-weight: 600;
 }
+
+#shadow {
+  pointer-events: none;
+}
+
+.interact {
+  fill: transparent;
+}
